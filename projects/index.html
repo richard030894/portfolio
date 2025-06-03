@@ -143,8 +143,12 @@
       </div>
     </section>
 
-    <footer class="text-sm text-center mt-24">
-      <body>©richard bailey 2025 <br> lovely designed, coded and deployed by me</body>
-    </footer>
+    <script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
   </body>
 </html>

@@ -1,0 +1,43 @@
+footer {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 2rem 0 0.5rem 0;
+  border-top: 1px solid #e5e7eb; /* Tailwind's gray-200 */
+  text-align: center;
+  background: transparent;
+}
+
+.footer-content {
+  font-size: 0.9rem;
+  color: #000000; /* Tailwind's gray-500 */
+}
+
+.footer-content a {
+  color: #2563eb; /* Tailwind's blue-600 */
+  text-decoration: underline;
+  margin-left: 1rem;
+  transition: color 0.2s;
+}
+.footer-content a:hover {
+  color: #1d4ed8; /* Tailwind's blue-700 */
+}
+      body {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 300;
+        text-transform: lowercase;}
+
+      a {
+        text-decoration: underline;
+      }
+
+
+body {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 300;
+        text-transform: lowercase;}
+
+      a {
+        text-decoration: underline;
+      }
