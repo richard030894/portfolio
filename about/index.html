@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Richard Bailey</title>
+    <link rel="icon" href="../images/favicon/favicon-hero.png" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon-hero-192x192.svg">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 300;
+        text-transform: lowercase;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+
+      .no-underline {
+        text-decoration: none;
+      }
+          .client-logo {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+      .client-logo:hover {
+        filter: grayscale(0%);
+      }
+    </style>
+    <script>
+      const backgrounds = [
+        '../images/backgrounds/bg1.jpg',
+        '../images/backgrounds/bg2.jpg',
+        '../images/backgrounds/bg3.jpg',
+        '../images/backgrounds/bg4.jpg',
+        '../images/backgrounds/bg5.jpg'
+      ];
+      let currentBg = 0;
+      function changeBackground() {
+        currentBg = (currentBg + 1) % backgrounds.length;
+        document.body.style.backgroundImage = `url(${backgrounds[currentBg]})`;
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundPosition = 'center';
+      }
+    </script>
+  </head>
+  <body class="bg-white text-black max-w-6xl mx-auto px-4 py-8">
+    <header class="mb-8 pt-12 flex items-center justify-between">
+      <div>
+        <h1 class="text-2xl font-medium mb-2"><a href="../index.html" class="no-underline hover:underline">Richard Bailey</a></h1>
+        <nav class="space-x-3 text-sm">
+          <a href="../about/index.html">about</a>
+          <a href="../projects/index.html">projects</a>
+          <a href="../contact/index.html">contact</a>
+          <a href="#" onclick="changeBackground()" class="hover:text-blue-600">click it</a>
+        </nav>
+      </div>
+    </header>
+ <section class="mb-12 max-w-2xl">
+      <p class="text-base">I’m Richard—a creatively-driven producer based in Oxfordshire. This is a little more about me, my approach, and the clients I’ve worked with.</p>
+    </section>
+
+    <section class="mb-12">
+      <div class="w-full aspect-[16/9] overflow-hidden">
+        <img src="/Users/richard.bailey/Desktop/portfolio-site/images/heros/aboutme-hero.png" alt="About Me" class="w-full h-full object-cover">
+      </div>
+    </section>
+
+    <section class="mb-24">
+      <h2 class="text-xl font-medium mb-4">clients</h2>
+      <div class="pl-1 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-x-6 gap-y-8">
+  
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/greatwesternrailwaylogo.svg" type="image/svg+xml">
+      <img src="" alt="Columbia" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/twixlogo.svg" type="image/svg+xml">
+      <img src="" alt="Twix" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/playstationlogo.svg" type="image/svg+xml">
+      <img src="" alt="PlayStation" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+   <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="../images/logos/columbia.svg" type="image/svg+xml">
+      <img src="../images/logos/columbia.svg" alt="Columbia" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/calmlogo.svg" type="image/svg+xml">
+      <img src="/Users/richard.bailey/Desktop/portfolio-site/images/logos/calmlogo.svg" alt="Calm" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/jllogo.svg" type="image/svg+xml">
+      <img src="/Users/richard.bailey/Desktop/portfolio-site/images/logos/jllogo.svg" alt="Calm" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/waitroselogo.svg" type="image/svg+xml">
+      <img src="" alt="Waitrose" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/fosterslogo.svg" type="image/svg+xml">
+      <img src="" alt="Fosters" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/playstationlogo.svg" type="image/svg+xml">
+      <img src="" alt="PlayStation" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+   <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="../images/logos/columbia.svg" type="image/svg+xml">
+      <img src="../images/logos/columbia.svg" alt="Columbia" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/calmlogo.svg" type="image/svg+xml">
+      <img src="/Users/richard.bailey/Desktop/portfolio-site/images/logos/calmlogo.svg" alt="Calm" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/jllogo.svg" type="image/svg+xml">
+      <img src="/Users/richard.bailey/Desktop/portfolio-site/images/logos/jllogo.svg" alt="Calm" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/greatwesternrailwaylogo.svg" type="image/svg+xml">
+      <img src="" alt="Columbia" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/twixlogo.svg" type="image/svg+xml">
+      <img src="" alt="Twix" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/playstationlogo.svg" type="image/svg+xml">
+      <img src="" alt="PlayStation" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+   <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="../images/logos/columbia.svg" type="image/svg+xml">
+      <img src="../images/logos/columbia.svg" alt="Columbia" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/calmlogo.svg" type="image/svg+xml">
+      <img src="/Users/richard.bailey/Desktop/portfolio-site/images/logos/calmlogo.svg" alt="Calm" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+  <div class="flex items-center justify-start w-full aspect-[16/9]">
+    <picture>
+      <source srcset="/Users/richard.bailey/Desktop/portfolio-site/images/logos/jllogo.svg" type="image/svg+xml">
+      <img src="/Users/richard.bailey/Desktop/portfolio-site/images/logos/jllogo.svg" alt="Calm" class="max-h-full max-w-full object-contain client-logo">
+    </picture>
+  </div>
+
+
+
+
+</div>
+</section>
+
+    <footer class="text-sm text-center mt-24">
+      <body>©richard bailey 2025 <br> lovely designed, coded and deployed by me</body>
+    </footer>
+  </body>
+</html>

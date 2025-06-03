@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Five Get There First</title>
+    <link rel="icon" href="../images/favicon/favicon-hero.png" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon-hero-192x192.svg">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 300;
+        text-transform: lowercase;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+
+      .no-underline {
+        text-decoration: none;
+      }
+    </style>
+    <script>
+      const backgrounds = [
+        '../images/backgrounds/bg1.jpg',
+        '../images/backgrounds/bg2.jpg',
+        '../images/backgrounds/bg3.jpg',
+        '../images/backgrounds/bg4.jpg',
+        '../images/backgrounds/bg5.jpg'
+      ];
+      let currentBg = 0;
+      function changeBackground() {
+        currentBg = (currentBg + 1) % backgrounds.length;
+        document.body.style.backgroundImage = `url(${backgrounds[currentBg]})`;
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundPosition = 'center';
+      }
+    </script>
+  </head>
+  <body class="bg-white text-black max-w-6xl mx-auto px-4 py-8">
+    <header class="mb-12 pt-12 flex items-center justify-between">
+      <div>
+        <h1 class="text-2xl font-medium mb-2">
+          <a href="../index.html" class="no-underline hover:underline">Richard Bailey</a>
+        </h1>
+        <nav class="space-x-3 text-sm">
+          <a href="../about/index.html">about</a>
+          <a href="../projects/">projects</a>
+          <a href="../contact/index.html">contact</a>
+          <a href="#" onclick="changeBackground()" class="hover:text-blue-600">click it</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="mb-12 max-w-2xl">
+      <p class="text-sm text-black-500 mb-2"><time datetime="2025-06-02">June 12, 2024</time></p>
+      <h2 class="text-xl font-medium mb-4">great western railway: five get there first</h2>
+      <p class="text-base">This is a description of the project. It highlights the concept, the role I played, and any important outcomes. This section can span multiple lines and contain rich details about the creative and production process.</p>
+    </section>
+
+    <section class="mb-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="/Users/richard.bailey/Desktop/portfolio-site/assets/gwr/five get there first-02.png" alt="Project Image 1" class="w-full aspect-[16/9] object-cover">
+        <img src="/Users/richard.bailey/Desktop/portfolio-site/assets/gwr/five get there first-03.png" alt="Project Image 2" class="w-full aspect-[16/9] object-cover">
+        <img src="/Users/richard.bailey/Desktop/portfolio-site/assets/gwr/five get there first-04.png" alt="Project Image 3" class="w-full aspect-[16/9] object-cover">
+        <img src="/Users/richard.bailey/Desktop/portfolio-site/assets/gwr/five get there first-05.png" alt="Project Image 3" class="w-full aspect-[16/9] object-cover">
+        <img src="/Users/richard.bailey/Desktop/portfolio-site/assets/gwr/five get there first-06.png" alt="Project Image 3" class="w-full aspect-[16/9] object-cover">
+        <img src="/Users/richard.bailey/Desktop/portfolio-site/assets/gwr/five get there first-07.png" alt="Project Image 3" class="w-full aspect-[16/9] object-cover">
+        <!-- Add more images as needed -->
+      </div>
+    </section>
+
+    <section class="mb-12 max-w-2xl">
+      <p class="text-base">This is a description of the project. It highlights the concept, the role I played, and any important outcomes. This section can span multiple lines and contain rich details about the creative and production process.</p>
+    </section>
+
+    <section class="mb-12">
+      <h3 class="text-lg font-medium mb-4">watch the film</h3>
+
+      <!-- YouTube Embed (uncomment if using YouTube) -->
+      <!--
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-96" src="https://www.youtube.com/embed/0QpfQARH2Js" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+      </div>
+      -->
+
+      <!-- Self-Hosted Video -->
+      <video class="w-full aspect-[16/9] object-cover" autoplay muted playsinline controls>
+        <source src="/Users/richard.bailey/Desktop/portfolio-site/assets/gwr/GWR - Five Get There First.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+     <section class="mb-12 max-w-2xl">
+      <p class="text-base">This is a description of the project. It highlights the concept, the role I played, and any important outcomes. This section can span multiple lines and contain rich details about the creative and production process.</p>
+    </section>
+
+    <section class="mb-12">
+      <img src="/Users/richard.bailey/Desktop/portfolio-site/assets/gwr/five get there first-01.png" alt="Project Image 1" class="w-full aspect-[16/9] object-cover">
+    </section>
+
+    <section class="mb-12 max-w-2xl">
+      <h2 class="text-xl font-medium mb-4">the wonderful team</h2>
+      <p class="text-base">Director: Guy Manwaring</p>
+      <p class="text-base">Production Company: Not To Scale & Merman</p>
+      <p class="text-base">Creatives: Matt Woolner & Steve Wioland</p>
+      <p class="text-base">Producers: Richard Bailey & Sally Pritchett</p>
+      <p class="text-base">Accounts: Scarlett Aldridge & Jono Shaw</p>
+    </section>
+
+    <section class="mb-12 max-w-2xl">
+      <h2 class="text-xl font-medium mb-4">awards</h2>
+      <p class="text-base">D&AD: 2022 Yellow Pencil</p>
+      <p class="text-base">D&AD: 2022 Graphine Pencil</p>
+      <p class="text-base">Campaign big awards</p>
+    </section>
+
+    <footer class="text-sm text-center mt-24">
+      <body>©richard bailey 2025 <br> lovely designed, coded and deployed by me</body>
+    </footer>
+  </body>
+</html>
