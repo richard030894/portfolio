@@ -1,74 +1,118 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>richard bailey</title>
-    <link rel="icon" href="images/favicon/favicon-hero.png" type="image/x-icon">
-    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon-hero-192x192.svg">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <title>project name - richard bailey</title>
+    <link rel="icon" href="../images/favicon/favicon-hero.png" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon-hero-192x192.svg">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-</style>
-    
-    <link rel="stylesheet" href="style.css">
-
-
+    <link rel="stylesheet" href="../style.css">
   </head>
-  
   <body class="bg-white text-black max-w-6xl mx-auto px-4 py-8">
-<header class="mb-8 pt-12 flex items-center justify-between">
+
+    <header class="mb-8 pt-12 flex items-center justify-between">
       <div>
-      <h1 class="text-2xl font-medium mb-2">richard bailey</h1>
-      <nav class="space-x-3 text-sm">
-        <a href="pages/about/index.html">about</a>
-        <a href="projects.html">projects</a>
-        <a href="contact.html">contact</a>
-        <a href="#" onclick="changeBackground()" class="hover:text-black-600">click it</a>
-      </nav>
+        <h1 class="text-2xl font-medium mb-2">
+          <a href="../index.html" class="hover:underline">richard bailey</a>
+        </h1>
+        <nav class="space-x-3 text-sm">
+          <a href="../about.html">about</a>
+          <a href="../projects.html">projects</a>
+          <a href="../contact.html">contact</a>
+          <!-- <a href="#" onclick="changeBackground()" class="hover:text-black-600">click it</a> -->
+        </nav>
       </div>
     </header>
 
 
-    <section class="mb-12 max-w-2xl">
-      <p class="text-base">Hello, I’m Richard. i'm a multi-faceted Producer based in Oxfordshire, currently part of the talented team at adam&eveDDB. Have a look round, find out a bit about me.</p>
+    <!-- Project Title & Info -->
+    <section class="mb-10 max-w-3xl">
+      <h2 class="text-2xl font-medium mb-2">Five Get There First</h2>
+      <div class="text-black-500 mb-4">Great Western Railway &middot; Film &middot; 2024</div>
+      <p class="text-base mb-6">
+        This project was a campaign for Great Western Railway, celebrating the nostalgia and joy of travel with a modern twist. I was involved in creative development, shoot production, and post-delivery, collaborating with an amazing team and client.
+      </p>     
     </section>
 
-    <section id="projects" class="mb-12">
-  <h2 class="text-xl font-medium mb-4"><a href="projects/">projects</a></h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      
-    <a href="projects/gwr-five-get-there-first.html" class="block group relative overflow-hidden">
-  <img src="assets/gwr/gwr-five-get-there-first-01.jpg" alt="Project 1 Thumbnail" class="w-full aspect-[16/9] object-cover group-hover:opacity-60 transition-opacity duration-200">
-  <div class="absolute inset-0 flex items-center justify-center text-black text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">five get there first</div>
-</a>
-    <a href="projects/twix-second-screen-staredown.html" class="block group relative overflow-hidden">
-  <img src="assets/twix/twix-staredown-01.jpg" alt="Project 1 Thumbnail" class="w-full aspect-[16/9] object-cover group-hover:opacity-60 transition-opacity duration-200">
-  <div class="absolute inset-0 flex items-center justify-center text-black text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">second screen staredown</div>
-</a>
+    <!-- Hero Image -->
+    <!-- <section class="mb-10">
+     <img src="../assets/gwr/gwr-five-get-there-first-01.jpg"
+     alt="Five Get There First — Project Hero"
+     class="w-full h-80 md:h-80 object-cover object-center" />
+    </section> -->
 
- <a href="projects/" class="block group relative overflow-hidden">
-  <img src="assets/calm/calm-the-last-photo-01.jpg" alt="Project 1 Thumbnail" class="w-full aspect-[16/9] object-cover group-hover:opacity-60 transition-opacity duration-200">
-  <div class="absolute inset-0 flex items-center justify-center text-black text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">the last photo</div>
-</a>
-
-    <!-- Add more projects as needed -->
-  
-</div>
-</section>
-<div id="footer-placeholder"></div>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      });
-  });
-</script>
+    <!-- Optional: Project Gallery, Video, or More Sections -->
     
-<script src="background.js"></script>
+    <section class="mb-10">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <img src="../assets/gwr/five get there first-02.png" class="w-full object-cover" alt="">
+    <img src="../assets/gwr/five get there first-03.png" class="w-full object-cover" alt="">
+    <img src="../assets/gwr/five get there first-04.png" class="w-full object-cover " alt="">
+    <!-- Add more images as needed -->
+  </div>
+</section>
 
-</body>
-</html> -->
+<section class="mb-10 max-w-3xl">
+      <p class="text-base mb-6">
+        This project was a campaign for Great Western Railway, celebrating the nostalgia and joy of travel with a modern twist. I was involved in creative development, shoot production, and post-delivery, collaborating with an amazing team and client.
+      </p>     
+    </section>
+
+<section class="mb-10">
+  <video
+    src="/assets/gwr/GWR - Five Get There First.mp4"
+    class="w-full"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    onmouseover="this.controls = true"
+    onmouseout="this.controls = false"
+    poster="../assets/gwr/five-get-there-first-thumb.jpg"
+    tabindex="0"
+    style="outline: none;"
+  >
+    Sorry, your browser doesn't support embedded videos.
+  </video>
+</section>
+
+<section class="mb-10 max-w-3xl">
+      <p class="text-base mb-6">
+        This project was a campaign for Great Western Railway, celebrating the nostalgia and joy of travel with a modern twist. I was involved in creative development, shoot production, and post-delivery, collaborating with an amazing team and client.
+      </p>     
+    </section>
+
+
+
+<section>
+<div class="flex flex-col gap-1 text-xs text-gray-400">
+  <span>Agency: adam&eveDDB</span>
+  <span>Creatives: Matt & Steve</span>
+  <span>Director: Guy Manwwaring</span>
+  <span>Production: Richard Bailey & Sally Pritchhet</span>
+  <span>Account Team: Jono Shaw & Scarlett Aldridge</span>
+  <!-- etc -->
+</div>
+
+</section>
+
+  
+  
+    <div id="footer-placeholder"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        fetch('../footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+      });
+    </script>
+    <script src="../background.js"></script>
+
+  </body>
+</html>
