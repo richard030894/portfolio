@@ -14,20 +14,24 @@
     
     <link rel="stylesheet" href="style.css">
 
+
   </head>
   
   <body class="bg-white text-black max-w-6xl mx-auto px-4 py-8">
-    <header class="mb-8 pt-12 flex items-center justify-between">
+<header class="mb-8 pt-12 flex items-center justify-between">
       <div>
-      <h1 class="text-2xl font-medium mb-2">Richard Bailey</h1>
+        <h1 class="text-2xl font-medium mb-2">
+        <a href="index.html" class="hover:underline">richard bailey</a>
+        </h1>
       <nav class="space-x-3 text-sm">
-        <a href="about/index.html">about</a>
-        <a href="projects/index.html">projects</a>
-        <a href="contact/index.html">contact</a>
-        <a href="#" onclick="changeBackground()" class="hover:text-blue-600">click it</a>
+        <a href="pages/about/index.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+        <a href="#" onclick="changeBackground()" class="hover:text-black-600">click it</a>
       </nav>
       </div>
     </header>
+
 
     <section class="mb-12 max-w-2xl">
       <p class="text-base">Hello, I’m Richard. i'm a multi-faceted Producer based in Oxfordshire, currently part of the talented team at adam&eveDDB. Have a look round, find out a bit about me.</p>
@@ -80,20 +84,18 @@
 </section>
 
 
+<div id="footer-placeholder"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  });
+</script>
     
-   <div id="footer-placeholder"></div>
-    <script>
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-placeholder').innerHTML = data;
-    });
-    </script>
+<script src="background.js"></script>
 
-
-      <script src="background.js"></script>
-
-
-
-  </body>
+</body>
 </html>
