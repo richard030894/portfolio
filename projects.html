@@ -12,20 +12,6 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="bg-white text-black max-w-6xl mx-auto px-4 py-8">
-    <header class="mb-8 pt-12 flex items-center justify-between">
-      <div>
-        <h1 class="text-2xl font-medium mb-2">
-          <a href="index.html" class="hover:underline">richard bailey</a>
-        </h1>
-        <nav class="space-x-3 text-sm">
-          <a href="about.html">about</a>
-          <a href="projects.html">projects</a>
-          <a href="contact.html">contact</a>
-          <a href="forfun.html">for fun</a>
-          <a href="#" onclick="changeBackground()" class="hover:text-black-600">click it</a>
-        </nav>
-      </div>
-    </header>
 
     <section id="projects" class="mb-12">
       <!-- <h2 class="text-xl font-medium mb-4"><a href="projects/">projects</a></h2> -->
@@ -102,6 +88,12 @@
           .then(response => response.text())
           .then(data => {
             document.getElementById('footer-placeholder').innerHTML = data;
+          });
+
+           fetch('header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.body.insertAdjacentHTML('afterbegin', data);
           });
       });
     </script>
