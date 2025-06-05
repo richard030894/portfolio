@@ -1,10 +1,17 @@
 // background.js
+const testing = true;
+const baseUrl = testing ? "http://localhost:5500" : ''
 const backgrounds = [
-  'images/backgrounds/bg1.jpg',
-  'images/backgrounds/bg2.jpg',
-  'images/backgrounds/bg3.jpg',
-  'images/backgrounds/bg4.jpg',
-  'images/backgrounds/bg5.jpg'
+  `${baseUrl}/images/backgrounds/bg1.jpg`,
+  `${baseUrl}/images/backgrounds/bg2.jpg`,
+  `${baseUrl}/images/backgrounds/bg3.jpg`,
+  `${baseUrl}/images/backgrounds/bg4.jpg`,
+  `${baseUrl}/images/backgrounds/bg5.jpg`,
+  `${baseUrl}/images/backgrounds/bg6.jpg`,
+  `${baseUrl}/images/backgrounds/bg7.jpg`,
+  `${baseUrl}/images/backgrounds/bg8.jpg`,
+  `${baseUrl}/images/backgrounds/bg9.jpg`,
+  `${baseUrl}/images/backgrounds/bg0.jpg`
 ];
 let currentBg = 0;
 function changeBackground() {

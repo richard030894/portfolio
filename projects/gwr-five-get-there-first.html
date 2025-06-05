@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>five get there first - richard bailey</title>
+    <link rel="icon" href="../images/favicon/favicon-hero.png" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon-hero-192x192.svg">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body class="bg-white text-black max-w-6xl mx-auto px-4 py-8">
+
+    <header class="mb-8 pt-12 flex items-center justify-between">
+      <div>
+        <h1 class="text-2xl font-medium mb-2">
+          <a href="../index.html" class="hover:underline">richard bailey</a>
+        </h1>
+        <nav class="space-x-3 text-sm">
+          <a href="../about.html">about</a>
+          <a href="../projects.html">projects</a>
+          <a href="../contact.html">contact</a>
+          <a href="../forfun.html">for fun</a>
+          <a href="#" onclick="changeBackground()" class="hover:text-black-600">click it</a>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Project Title & Info -->
+    <section class="mb-10 max-w-3xl">
+      <h2 class="text-2xl font-medium mb-2">Five Get There First</h2>
+      <div class="text-black-500 mb-4">Great Western Railway &middot; Film &middot; 2024</div>
+      <p class="text-base mb-6">
+        This project was a campaign for Great Western Railway, celebrating the nostalgia and joy of travel with a modern twist. I was involved in creative development, shoot production, and post-delivery, collaborating with an amazing team and client.
+      </p>     
+    </section>
+
+    <!-- Hero Image -->
+    <section class="mb-10">
+        <img src="../assets/gwr/gwr-five-get-there-first-01.jpg"
+        alt="Five Get There First — Project Hero"
+        class="w-full h-80 md:h-80 object-cover object-top" />
+    </section>
+
+    <!-- Optional: Project Gallery, Video, or More Sections -->
+    
+    <section class="mb-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="../assets/gwr/five get there first-02.png" class="w-full object-cover" alt="">
+        <img src="../assets/gwr/five get there first-03.png" class="w-full object-cover" alt="">
+        <img src="../assets/gwr/five get there first-04.png" class="w-full object-cover " alt="">
+    <!-- Add more images as needed -->
+      </div>
+    </section>
+
+    <section class="mb-10 max-w-3xl">
+      <p class="text-base mb-6">
+      This project was a campaign for Great Western Railway, celebrating the nostalgia and joy of travel with a modern twist. I was involved in creative development, shoot production, and post-delivery, collaborating with an amazing team and client.
+      </p>     
+    </section>
+
+    <section class="mb-10">
+      <video
+        src="/assets/gwr/GWR - Five Get There First.mp4"
+        class="w-full"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        onmouseover="this.controls = true"
+        onmouseout="this.controls = false"
+        poster="../assets/gwr/five-get-there-first-thumb.jpg"
+        tabindex="0"
+        style="outline: none;"
+        >Sorry, your browser doesn't support embedded videos.
+      </video>
+    </section>
+
+    <section class="mb-10 max-w-3xl">
+        <p class="text-base mb-6">
+        This project was a campaign for Great Western Railway, celebrating the nostalgia and joy of travel with a modern twist. I was involved in creative development, shoot production, and post-delivery, collaborating with an amazing team and client.
+        </p>     
+    </section>
+
+    <section>
+      <!-- <div class="flex flex-col gap-1 text-xs text-black-400"> -->
+    <section class="mb-10">
+        <div class="h3">
+          <h2 class="text-2xl font-medium mb-2">team</h2>
+          <p>Agency: adam&eveDDB</p>
+          <p>Creatives: Matt & Steve</p>
+          <p>Director: Guy Manwwaring</p>
+          <p>Production: Richard Bailey & Sally Pritchhet</p>
+          <p>Account Team: Jono Shaw & Scarlett Aldridge</p>
+      <!-- etc -->
+        </div>
+      </section>
+
+      <section class="mb-20 max-w-3xl">
+        <h2 class="text-2xl font-medium mb-2">awards</h2>
+          <div class="flex flex-col gap-2 text-xs text-black-400">
+          <div class="flex items-center gap-2">
+          <img src="../images/award-icons/yellow-pencil.svg" alt="" class="h-4 w-4" />
+            <p class="m-0">D&AD Yellow Pencil 2025</p>
+          </div>
+          <div class="flex items-center gap-2">
+          <img src="../images/award-icons/wooden-pencil.svg.svg" alt="" class="h-4 w-4" />
+            <p class="m-0">D&AD Wooden Pencil 2025</p>
+          </div>
+          <div class="flex items-center gap-2">
+          <img src="../images/award-icons/graphite-pencil.svg.svg" alt="" class="h-4 w-4" />
+            <p class="m-0">D&AD Graphite Pencil 2025</p>
+            </div>
+        <!-- etc -->
+            </div>
+        </section>
+
+
+          <div id="footer-placeholder"></div>
+      <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        fetch('../footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+      });
+      </script>
+      <script src="../background.js"></script>
+  </body>
+</html>
