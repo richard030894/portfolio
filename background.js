@@ -1,6 +1,6 @@
 // background.js
 const testing = false;
-const baseUrl = testing ? "http://localhost:5500" : 'https://richard030894.github.io'
+const baseUrl = testing ? "http://localhost:5500" : 'https://richard030894.github.io/portfolio'
 const backgrounds = [
   `${baseUrl}/images/backgrounds/bg1.jpg`,
   `${baseUrl}/images/backgrounds/bg2.jpg`,
