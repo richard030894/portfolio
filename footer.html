@@ -3,5 +3,9 @@
    
   <div>Lovingly designed, coded and deployed by me <br> &copy; 2025 Richard Bailey
   </div>
+  <script>
+      const today = new Date().toISOString().slice(0,10).replace(/-/g,''); 
+      document.write(`<script src="background.js?v=${today}"><\/script>`);
+    </script>
 </footer>
 
