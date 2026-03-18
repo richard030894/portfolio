@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Wagen - richard bailey</title>
+    <link rel="icon" href="../images/favicon/favicon-hero.png" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon-hero-192x192.svg">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body class="bg-white text-black max-w-6xl mx-auto px-4 py-8">
+
+    <!-- Project Title & Info -->
+    <section class="mb-10 max-w-3xl">
+      <h2 class="text-2xl font-medium mb-2">Hash Brown Bites</h2>
+      <div class="text-black-500 mb-4">Mccain &middot; Social &middot; 2025</div>
+      <p class="text-base mb-6">
+Directed and edited by the wonderfully talented Ant Rubinstein, the film helps launch McCain’s new AirFry Hash Brown Bites with a rather grand and dramatic dinner time scenario between friends.
+The majority of the post-production was handled by the talented team at No.8, with Jonny Tully grading the film and James Everett with the sound design & mix.
+<br><br>
+The advert was one of the first to be shot on the new Alexa 35 Extreme camera system, recommended by Ant, with a view to gain a less noisy image on the slow-motion shot.     </section>
+
+    <!-- Hero Image -->
+    <!-- <section class="mb-10">
+        <img src="../assets/volkswagen/yourwagen/Natalie_Carousel_Master_5400x1350_03.jpeg"
+        class="w-full h-80 md:h-80 object-cover object-top" />
+    </section> -->
+
+<section class="mb-10">
+      <video
+        src="/assets/mccain/hashbrownbites/McCain_Airfryer_Hash_Brown_Bites_20s_Online_Master (1)_1.mp4"
+        class="w-full"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        onmouseover="this.controls = true"
+        onmouseout="this.controls = false"
+        poster="../assets/calm/calm-the-last-photo-01.jpg"
+        tabindex="0"
+        style="outline: none;"
+        >Sorry, your browser doesn't support embedded videos.
+      </video>
+    </section>
+
+    <!-- Add more images as needed -->
+      </div>
+    </section>
+
+    <section>
+      <!-- <div class="flex flex-col gap-1 text-xs text-black-400"> -->
+    <section class="mb-10">
+        <div class="h3">
+          <h2 class="text-2xl font-medium mb-2">team</h2>
+          <p>Agency: adam&eveDDB</p>
+          <p>Creative: Reanne Whitterake</p>
+          <p>Editor: Ant Rubinstein</p>
+          <p>VFX: No.8</p>
+          <p>Sound: James Everett @ No.8</p>
+          <p>Director: Ant Rubinstein</p>
+          <p>Post-Production: Richard Bailey</p>
+          <p>Account Team: Lesley Smith</p>
+      <!-- etc -->
+        </div>
+      </section>
+
+    
+
+          <div id="footer-placeholder"></div>
+      <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        fetch('../footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+
+           fetch('../header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.body.insertAdjacentHTML('afterbegin', data);
+          });
+      });
+      </script>
+      <script src="../background.js"></script>
+  </body>
+</html>
