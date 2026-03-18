@@ -1,4 +1,4 @@
-// background.js
+background.js
 const testing = false;
 const baseUrl = testing ? "http://localhost:5500" : 'https://richard030894.github.io/portfolio'
 const backgrounds = [
